@@ -1,0 +1,7 @@
+pyrogram
+requests
+tgcrypto
+pymongo[srv]
+bs4
+pyromod==1.5
+asyncio
