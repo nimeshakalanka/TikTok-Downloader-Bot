@@ -1,6 +1,5 @@
 from pyrogram import Client, filters, enums, errors
-from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, InlineQueryResultArticle, \
-    InputTextMessageContent, Message, CallbackQuery
+from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, InlineQueryResultArticle, InputTextMessageContent, Message, CallbackQuery
 from pyrogram.errors import UserNotParticipant
 from pyrogram.errors.exceptions.flood_420 import FloodWait
 import requests
@@ -12,7 +11,7 @@ from pyromod import listen
 from db import add_user, add_group, all_users, all_groups, users, remove_user
 
 app = Client(
-    "app",
+    "Tik-Dl",
     api_id=cfg.API_ID,
     api_hash=cfg.API_HASH,
     bot_token=cfg.BOT_TOKEN
@@ -55,7 +54,6 @@ DEV_TEXT = """**NIMESH AKALANKA 🇱🇰 **is Professsional Telegram Bot Develop
 
 
 # start.
-0
 @app.on_message(filters.command('start'))
 async def start(_, message):
     add_user(message.from_user.id)
