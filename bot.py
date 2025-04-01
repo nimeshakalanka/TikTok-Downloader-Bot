@@ -57,7 +57,7 @@ DEV_TEXT = """**NIMESH AKALANKA 🇱🇰 **is Professsional Telegram Bot Develop
 @app.on_message(filters.command('start'))
 async def start(_, message):
     add_user(message.from_user.id)
-    await app.send_message(message.from_user.id, text="👋👋 Hello " + message.from_user.mention + ", I am **Lexie Tiktok Bot**.\nI can download TikTok video for you without watermark.",
+    await app.send_message(message.from_user.id, text="👋👋 Hello " + message.from_user.mention + ", I am **Tiktok Downloader Bot**.\nI can download TikTok video for you without watermark.",
                          reply_markup=InlineKeyboardMarkup(START_BUTTON))
 
 
