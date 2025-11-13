@@ -7,3 +7,5 @@ class Config:
     MONGO_URI = "mongodb+srv://tik:tok@cluster0.tiktok.mongodb.net/?retryWrites=true&w=majority" #mongodb url
     SUDO = [123456789] #admins ids
 cfg = Config()
+
+#those are sample configs
